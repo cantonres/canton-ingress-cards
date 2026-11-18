@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#071018" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: blob:; media-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests" />
+    <meta name="description" content="Canton 卡册 · Ingress 收藏卡 360° 高清存档，正反面随心翻转。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Canton 卡册" />
+    <meta property="og:title" content="Canton 卡册 · Ingress 收藏卡存档" />
+    <meta property="og:description" content="Ingress 收藏卡 360° 高清存档，正反面随心翻转。" />
+    <meta property="og:url" content="https://cantonres.github.io/canton-ingress-cards/" />
+    <meta property="og:image" content="https://cantonres.github.io/canton-ingress-cards/share.png" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
+    <meta itemprop="name" content="Canton 卡册" />
+    <meta itemprop="description" content="Ingress 收藏卡 360° 高清存档。" />
+    <meta itemprop="image" content="https://cantonres.github.io/canton-ingress-cards/share.png" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <style>
+      html, body { margin: 0; min-height: 100%; background: #071018; }
+      #app-loading { position: fixed; inset: 0; z-index: 9999; display: grid; place-items: center; background: radial-gradient(circle at 48% 40%, #102a2c 0, #0a1a22 42%, #071018 100%); color: #d8f5ec; font-family: "Noto Serif SC", "Songti SC", serif; }
+      #app-loading > div { display: flex; flex-direction: column; align-items: center; }
+      #app-loading .seal { display: grid; width: 54px; height: 54px; place-items: center; border: 1px solid #00e5a0; color: #5fd0ee; font-size: 24px; font-weight: 900; transform: rotate(-3deg); }
+      #app-loading p { margin: 18px 0 0; color: #8fb6ae; font-size: 11px; letter-spacing: .32em; }
+      #app-loading i { display: block; width: 90px; height: 1px; margin-top: 16px; overflow: hidden; background: #1c3d3a; }
+      #app-loading i::after { content: ""; display: block; width: 42%; height: 100%; background: #2ab8e0; animation: app-loading 1.1s ease-in-out infinite alternate; }
+      @keyframes app-loading { from { transform: translateX(-100%); } to { transform: translateX(240%); } }
+      @media (prefers-reduced-motion: reduce) { #app-loading i::after { animation: none; } }
+    </style>
+    <title>Canton 卡册 · Ingress 收藏卡存档</title>
+  </head>
+  <body>
+    <div id="app-loading" role="status" aria-label="页面加载中">
+      <div><div class="seal">卡</div><p>Canton 卡册</p><i></i></div>
+    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
