@@ -2,7 +2,7 @@
 
 基于 [pwstrick/water-card](https://github.com/pwstrick/water-card) 改造的 Ingress 收藏卡展示站。品牌名 **Canton 卡册**,定位为通用的 Ingress 卡展示/鉴赏平台,可容纳任意主题卡片(不限于当前这批非遗卡)。
 
-在线地址:<https://cantonres.github.io/canton-ingress-cards/>
+在线地址:<https://cantonres.com/canton-ingress-cards/>
 
 ## 关于当前卡片
 
