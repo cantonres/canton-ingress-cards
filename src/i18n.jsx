@@ -23,6 +23,9 @@ const ZH = {
   'top.creditPrefix': '卡面展示与 3D 交互方案致谢 ',
   'top.creditLink': '水浒卡鉴赏室',
   'top.creditSuffix': ' 项目。',
+  'top.swagPrefix': '卡面素材来源于 ',
+  'top.swagLink': 'www.ingress-swag.com',
+  'top.swagSuffix': ' 的存档，谨致谢意。',
   'top.close': '关闭',
   'footer.text': 'CANTON 卡册 · INGRESS 收藏卡高清重制存档',
 
@@ -136,6 +139,9 @@ const EN = {
   'top.creditPrefix': 'Card gallery and 3D interaction are based on ',
   'top.creditLink': 'pwstrick’s Water Margin Cards Gallery',
   'top.creditSuffix': ' project, with thanks.',
+  'top.swagPrefix': 'Card artwork sourced from the archive at ',
+  'top.swagLink': 'www.ingress-swag.com',
+  'top.swagSuffix': ', with thanks.',
   'top.close': 'Close',
   'footer.text': 'CANTON CARDS · HD Ingress collectible card archive',
 

@@ -3,6 +3,7 @@ import { useI18n } from '../../i18n'
 
 const GITHUB_URL = 'https://github.com/cantonres/canton-ingress-cards'
 const WATER_CARD_URL = 'https://github.com/pwstrick/water-card'
+const SWAG_URL = 'https://www.ingress-swag.com/'
 
 function GitHubIcon() {
   return (
@@ -118,6 +119,18 @@ export default function SiteHeader() {
               {t('top.creditLink')}
             </a>
             {t('top.creditSuffix')}
+          </p>
+          <p className="mb-0 mt-1 text-[10px] leading-5 tracking-[.04em] text-[#6f9a91]">
+            {t('top.swagPrefix')}
+            <a
+              className="text-[#7fdcf2] no-underline underline-offset-2 hover:underline"
+              href={SWAG_URL}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {t('top.swagLink')}
+            </a>
+            {t('top.swagSuffix')}
           </p>
           <a
             className="mt-3 inline-flex items-center gap-2 text-[10px] tracking-[.12em] text-[#7fdcf2] no-underline transition-colors hover:text-[#d8f5ec]"

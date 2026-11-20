@@ -38,3 +38,4 @@ npm run preview    # 预览构建结果
 - 卡片为 Ingress Mission Day 广州 2016 的活动物料，插画、文字及相关素材的著作权归 Niantic Inc.、原活动承办方及各位创作者所有。本站为非商业性存档展示，不提供下载；如权利人认为内容不妥，请通过 [Issues](https://github.com/cantonres/canton-ingress-cards/issues) 联系，我们会立即删除。
 - Ingress 是 Niantic Inc. 的注册商标，本站与 Niantic Inc. 无官方关联。
 - 页面与 3D 交互实现基于 [pwstrick/water-card](https://github.com/pwstrick/water-card)，遵循其 MIT License。
+- 卡面素材来源于 [www.ingress-swag.com](https://www.ingress-swag.com/) 的存档，谨致谢意。
