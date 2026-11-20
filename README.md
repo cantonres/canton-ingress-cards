@@ -1,6 +1,6 @@
 # Canton 卡册
 
-Ingress 收藏卡的在线存档与 3D 鉴赏站点，收录 Ingress Mission Day 广州（2016.07.30）的 13 张非遗主题收藏卡。
+Ingress 收藏卡的在线存档与 3D 鉴赏站点，收录城市卡、Niantic 官方卡及玩家卡，共 74 张。
 
 在线访问：<https://cantonres.com/canton-ingress-cards/>
 
@@ -9,6 +9,7 @@ Ingress 收藏卡的在线存档与 3D 鉴赏站点，收录 Ingress Mission Day
 - Three.js 3D 卡片：拖动旋转、惯性、缩放、局部平移、正反面切换
 - 中 / 英双语界面，可随时切换
 - 中文、英文、拼音检索
+- 卡片按城市卡 / 官方卡 / 玩家卡三类筛选，类别可通过链接直接打开：`#city`、`#official`、`#biocard`；也可用 `#city/007` 直达指定卡片
 - 对比区：最多 6 张并排对比、拖动排序、统一翻面
 - 移动端单指旋转、双指缩放与平移
 - 图片加载失败自动重试

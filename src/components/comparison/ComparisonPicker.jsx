@@ -26,6 +26,7 @@ export default function ComparisonPicker({
           className="justify-self-center"
         />
 
+        {pickerCollection.cards.length > 0 && (
         <CharacterListbox
           key={pickerCollection.id}
           cards={pickerCollection.cards}
@@ -38,6 +39,7 @@ export default function ComparisonPicker({
           listLabel={t('compare.listLabel')}
           className="w-full max-w-[300px] justify-self-center"
         />
+        )}
       </div>
       <p className="mb-0 mt-3 text-right font-mono text-[9px] tracking-[.12em] text-[#4e756d] sm:text-center">
         {t('compare.selectedCount', { count: selectedCount, max: MAX_COMPARISON_CARDS })}

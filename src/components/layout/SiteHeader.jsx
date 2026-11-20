@@ -108,6 +108,7 @@ export default function SiteHeader() {
           <p className="m-0 text-[11px] leading-6 tracking-[.04em] text-[#a8c4bb]">{t('top.disclaimer')}</p>
           <p className="mb-0 mt-2 text-[10px] leading-5 tracking-[.04em] text-[#8fb6ae]">{t('top.rights')}</p>
           <p className="mb-0 mt-2 text-[10px] leading-5 tracking-[.04em] text-[#8fb6ae]">{t('top.takedown')}</p>
+          <p className="mb-0 mt-2 text-[10px] leading-5 tracking-[.04em] text-[#6f9a91]">{t('top.aiNotice')}</p>
           <p className="mb-0 mt-2 text-[10px] leading-5 tracking-[.04em] text-[#6f9a91]">
             {t('top.creditPrefix')}
             <a

@@ -6,6 +6,7 @@ import { getCardBadgeClass } from '../config/cardPresentation'
 
 export default function CardDetails({ card, cards, collection, onCardChange }) {
   const { t, cardCategory, cardRegion, cardIntroduction, collectionLabel } = useI18n()
+  if (!card) return <aside id="details" className="relative border-l border-[#d8f5ec1f] bg-[#07101840] px-[38px] py-9 max-lg:border-l-0 max-lg:border-t" />
   const stats = card.kind === 'villain'
     ? [[t('details.identity'), card.identity], [t('details.series'), card.series]]
     : [[t('details.category'), cardCategory(card)], [t('details.region'), cardRegion(card)]]

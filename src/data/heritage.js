@@ -833,8 +833,9 @@ export const cards = order.map((entry, index) => {
     name,
     ...info,
     // 类别/属性是卡片的类型元信息，不是文化主题。
-    // 本批 13 张均为 Mission Day 城市卡；未来新增 Agent / Biocard 时，
-    // 只需在对应卡片数据里设置 kind / kindEn / subtype / subtypeEn 即可覆盖。
+    // kind 同时输出，供 collections 按类型筛选。
+    kind: info.kind ?? 'Mission Day',
+    kindEn: info.kindEn ?? 'Mission Day',
     nickname: info.kind ?? 'Mission Day',
     star: info.subtype ?? '城市卡',
     category: info.kind ?? 'Mission Day',

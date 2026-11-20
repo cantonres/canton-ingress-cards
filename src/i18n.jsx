@@ -19,6 +19,7 @@ const ZH = {
   'top.disclaimer': '本站为爱好者自发建立的非商业性活动存档，与 Niantic Inc. 及原活动承办方无官方关联；Ingress 是 Niantic Inc. 的注册商标。',
   'top.rights': '卡面插画、文字及相关素材的著作权归 Niantic Inc.、原活动承办方及各位创作者所有，本站仅作存档展示之用。',
   'top.takedown': '本站不提供下载、不作任何商业用途。如权利人认为内容不妥，请通过 GitHub 联系我们，我们将于收到通知后立即删除。',
+  'top.aiNotice': '本站由 AI 操持建设，资料与文案可能有错误之处，敬请谅解。',
   'top.aboutGithub': '在 GitHub 上查看本项目',
   'top.creditPrefix': '卡面展示与 3D 交互方案致谢 ',
   'top.creditLink': '水浒卡鉴赏室',
@@ -50,6 +51,7 @@ const ZH = {
 
   // 存档区
   'viewer.collectionAria': '卡片分类',
+  'viewer.empty': '本分类暂无卡片，敬请期待。',
   'viewer.loading': '预览加载中…',
   'viewer.aria': '{name}收藏卡 three.js 360 度预览区，拖动旋转，滚轮或双指缩放',
   'viewer.loadingCard': '卡片载入中…',
@@ -135,6 +137,7 @@ const EN = {
   'top.disclaimer': 'A non-commercial archive run by fans, not affiliated with Niantic Inc. or the original event organizer. Ingress is a registered trademark of Niantic Inc.',
   'top.rights': 'Artwork, text and other materials remain the copyright of Niantic Inc., the original event organizer and their creators; this site displays them for archival purposes only.',
   'top.takedown': 'No downloads are offered and no commercial use is made. Rights holders may contact us via GitHub and we will remove the content promptly upon notice.',
+  'top.aiNotice': 'This site is built and maintained with AI; information and wording may contain errors.',
   'top.aboutGithub': 'View this project on GitHub',
   'top.creditPrefix': 'Card gallery and 3D interaction are based on ',
   'top.creditLink': 'pwstrick’s Water Margin Cards Gallery',
@@ -163,7 +166,8 @@ const EN = {
   'tips.heading': 'Controls',
   'control.optionSwitch': 'Option switch',
 
-  'viewer.collectionAria': 'Card collections',
+  'viewer.collectionAria': 'Card categories',
+  'viewer.empty': 'No cards in this category yet. Stay tuned.',
   'viewer.loading': 'Loading preview…',
   'viewer.aria': '360° three.js preview of {name}: drag to rotate, scroll or pinch to zoom',
   'viewer.loadingCard': 'Loading card…',

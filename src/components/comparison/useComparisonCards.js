@@ -15,7 +15,7 @@ const DEFAULT_SELECTED_KEYS = DEFAULT_COMPARISON_CARDS.map(({ collectionId, card
 
 export default function useComparisonCards(collections) {
   const [pickerCollectionId, setPickerCollectionId] = useState(collections[0].id)
-  const [pickerCardId, setPickerCardId] = useState(collections[0].cards[0].id)
+  const [pickerCardId, setPickerCardId] = useState(collections[0].cards[0]?.id ?? null)
   const [selectedKeys, setSelectedKeys] = useState(DEFAULT_SELECTED_KEYS)
 
   const { collection: pickerCollection, card: pickerCard } = resolveCardSelection(
@@ -34,10 +34,15 @@ export default function useComparisonCards(collections) {
     return collectionId === pickerCollection.id ? [cardId] : []
   })
 
+  // 切换大类时，把对比区现有的 4 张卡一并重置为该分类的前 4 张；
+  // 分类无卡时清空对比区（空卡组由 ComparisonGrid 展示空状态）。
   const changePickerCollection = (collectionId) => {
     const { collection: nextCollection } = resolveCardSelection(collections, collectionId)
     setPickerCollectionId(nextCollection.id)
-    setPickerCardId(nextCollection.cards[0].id)
+    setPickerCardId(nextCollection.cards[0]?.id ?? null)
+    setSelectedKeys(nextCollection.cards.slice(0, DEFAULT_SELECTED_KEYS.length).map(
+      (card) => createComparisonCardKey(nextCollection.id, card.id),
+    ))
   }
 
   const togglePickerCard = (card) => {
